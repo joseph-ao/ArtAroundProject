@@ -1,0 +1,106 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  background-image: linear-gradient(
+      rgba(79, 76, 76, 0.919),
+      rgba(48, 45, 45, 0.644),
+      rgba(48, 45, 45, 0.644),
+      rgba(48, 45, 45, 0.644),
+      rgba(48, 45, 45, 0.644),
+      rgba(48, 45, 45, 0.644),
+      rgba(150, 77, 137, 0.364)
+    ),
+  url("../assets/images/Locations-bgimage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+.map-container {
+  width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+.firstcol {
+  background-color: #dcd8d7;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+  width: 550px;
+  left: 155px;
+  top: 171px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.title {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word {
+  --color-1: #c65898;
+  --color-2: #d6b7e4;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+
+  50% {
+    color: var(--color-2);
+  }
+
+  100% {
+    color: var(--color-1);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .map-container {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .map-container iframe {
+    height: 400px;
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .firstcol {
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .row {
+    flex-direction: column-reverse;
+  }
+
+  .secondcol {
+    margin-bottom: 20px;
+  }
+}

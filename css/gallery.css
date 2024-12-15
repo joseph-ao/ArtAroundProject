@@ -1,0 +1,132 @@
+
+.gradient-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(79, 76, 76, 0.919),
+      rgba(48, 45, 45, 0.644),
+      rgba(48, 45, 45, 0.644),
+      rgba(48, 45, 45, 0.644),
+      rgba(48, 45, 45, 0.644),
+      rgba(48, 45, 45, 0.644),
+      rgba(150, 77, 137, 0.364));
+  z-index: -1;
+  pointer-events: none;
+}
+
+.backgroundclip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  object-fit: cover;
+}
+
+
+.gallery {
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.gallery-item {
+  position: relative;
+  margin: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease-in-out;
+  padding: 20px;
+}
+
+.overlay:hover .overlay-text {
+  opacity: 1;
+}
+
+.overlay-text h3 {
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.overlay-text p {
+  font-size: 18px;
+}
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #C65898;
+  --color-2: #fefefe;
+}
+
+.title-word-2 {
+  --color-1: #C65898;
+  --color-2: #fefefe;
+}
+
+.title-word-3 {
+  --color-1: #fefefe;
+  --color-2: #C65898;
+}
+
+.title-word-4 {
+  --color-1: #fefefe;
+  --color-2: #C65898;
+}
+
+.title-word-5 {
+  --color-1: #fefefe;
+  --color-2: #C65898;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1)
+  }
+
+  50% {
+    color: var(--color-2)
+  }
+
+  100% {
+    color: var(--color-1)
+  }
+}
+
