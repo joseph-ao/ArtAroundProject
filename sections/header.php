@@ -20,6 +20,9 @@
         <li class="nav-item">
           <a class="nav-link" href="form.php" style="margin-left: 5px;">Join Us</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="assets/pdfs/artaroundreport.pdf" style="margin-left: 5px;">*Report</a>
+        </li>
       </ul>
     </div>
   </nav>
