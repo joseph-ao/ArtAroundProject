@@ -81,13 +81,13 @@
           <div id="carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="assets/images/carousel/carousel1.jpg" class="container d-flex justify-content-end w-100 h-50" alt="street art">
+                <img src="assets/images/carousel/carousel1.jpg" class="img-fluid" alt="street art">
               </div>
               <div class="carousel-item">
-                <img src="assets/images/carousel/carousel2.png" class="container d-flex justify-content-end w-100 h-50" alt="el manja">
+                <img src="assets/images/carousel/carousel2.png" class="img-fluid" alt="el manja">
               </div>
               <div class="carousel-item">
-                <img src="assets/images/carousel/carousel3.png" class="container d-flex justify-content-end w-100 h-50" alt="vast sea">
+                <img src="assets/images/carousel/carousel3.png" class="img-fluid" alt="vast sea">
               </div>
             </div>
 

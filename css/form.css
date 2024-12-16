@@ -9,7 +9,7 @@ body {
             rgba(48, 45, 45, 0.644),
             rgba(48, 45, 45, 0.644),
             rgba(150, 77, 137, 0.364)),
-        url('../assets/images/Form-bgimage.jpg');
+        url('../assets/images/Form-bgimage.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

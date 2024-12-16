@@ -202,11 +202,25 @@ p {
   height: 450px;
   border: none;
 }
-
 #carousel {
   padding: 0;
-  margin-left: 20%;
+  margin-top: 10%;
+  margin-right: 30%;
+  width: 200px;  
+  height: auto; 
+  overflow: hidden; }
+
+.carousel-inner {
+  height: 100%;
+  width: 100%;
 }
+
+.galleryimage {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+}
+
 
 .aboutusimage,
 .aboutustext {
